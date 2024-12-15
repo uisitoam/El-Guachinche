@@ -7,3 +7,5 @@ Trabajo de la asignatura de Inteligencia de Negocio del Máster en Big Data de l
 * Consultas ROLAP y MDX. 
 * Generación de cuadros de mando.
 * Generación de informes.
+
+El repositorio contiene todos los archivos usados y generados durante el desarrollo del trabajo, así como un archivo pdf con la memoria del proyecto de BI.
