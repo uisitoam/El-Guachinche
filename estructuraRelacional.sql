@@ -89,3 +89,49 @@ CREATE TABLE fact_satisfaccion (
     valoracion_comida NUMERIC(2, 1) CHECK (valoracion_comida >= 0 AND valoracion_comida <= 5),
     PRIMARY KEY (restaurante, fecha)
 );
+
+
+
+
+
+-- --Datos de prueba
+
+-- -- Insertar en la tabla tiempo
+-- INSERT INTO tiempo (id, ano, mes, mes_texto) VALUES
+-- (1, 2021, 2, 'Febrero');
+
+-- -- Insertar en la tabla restaurante
+-- INSERT INTO restaurante (id, pais, ciudad) VALUES
+-- (1, 'España', 'La Laguna');
+
+-- -- Insertar en la tabla productos
+-- INSERT INTO productos (id, nombre, precio) VALUES
+-- (1, 'Almogrote Gomero', 5.00),
+-- (2, 'Papas arrugadas con mojo', 6.50),
+-- (3, 'Queso asado con mojo', 7.00),
+-- (4, 'Escaldon', 7.00),
+-- (5, 'Ropa vieja', 9.00),
+-- (6, 'Costilla con papas y piña', 10.00),
+-- (7, 'Carne fiesta', 9.50),
+-- (8, 'Quesillo', 4.50),
+-- (9, 'Bienmesabe', 4.50);
+
+-- -- Insertar en la tabla finanzas
+-- INSERT INTO finanzas (restaurante, fecha, alquiler, personal, proveedores, extra, ingresos_presencial, ingresos_domicilio, numero_clientes_presencial, nuevos_clientes_presencial, numero_clientes_domicilio, nuevos_clientes_domicilio) VALUES
+-- (1, 1, 1300.00, 12000.00, 3254.40, 1045.11, 25911.13, 1741.15, 1798, 129, 188, 73);
+
+-- -- Insertar en la tabla producto
+-- INSERT INTO producto (restaurante, fecha, producto, ventas) VALUES
+-- (1, 1, 1, 277),
+-- (1, 1, 2, 337),
+-- (1, 1, 3, 19),
+-- (1, 1, 4, 131),
+-- (1, 1, 5, 206),
+-- (1, 1, 6, 160),
+-- (1, 1, 7, 228),
+-- (1, 1, 8, 388),
+-- (1, 1, 9, 470);
+
+-- -- Insertar en la tabla feedback
+-- INSERT INTO feedback (restaurante, fecha, valoracion_ambiente, valoracion_personal, valoracion_comida) VALUES
+-- (1, 1, 3.6, 2.3, 3.3);

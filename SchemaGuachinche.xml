@@ -1,4 +1,4 @@
-<Schema name="New Schema2">
+<Schema name="guachincheCubo" description="Cubo guachinche">
   <Dimension type="TimeDimension" visible="true" highCardinality="false" name="Tiempo">
     <Hierarchy name="jerarquiaTiempo" visible="true" hasAll="true" primaryKey="id">
       <Table name="dim_tiempo" schema="public">
@@ -24,10 +24,6 @@
       <Table name="dim_productos" schema="public">
       </Table>
       <Level name="nombre" visible="true" table="dim_productos" column="nombre" type="String" internalType="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
-      </Level>
-    </Hierarchy>
-    <Hierarchy name="jerarquiaPrecioProductos" visible="true" hasAll="true">
-      <Level name="precio" visible="true" table="dim_productos" column="precio" type="Numeric" internalType="long" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
       </Level>
     </Hierarchy>
   </Dimension>
@@ -80,8 +76,6 @@
     </DimensionUsage>
     <Measure name="Ventas" column="ventas" datatype="Integer" aggregator="sum" visible="true">
     </Measure>
-    <CalculatedMember name="Ingresos por producto" formula="[Measures].[Ventas]*[Productos].[nombre].CurrentMember.Properties(\&#34;precio\&#34;)" dimension="Measures" visible="true">
-    </CalculatedMember>
   </Cube>
   <Cube name="Feedback" visible="true" cache="true" enabled="true">
     <Table name="fact_satisfaccion" schema="public">
