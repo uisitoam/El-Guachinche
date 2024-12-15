@@ -75,7 +75,7 @@ CREATE TABLE fact_ventas (
     producto INT NOT NULL REFERENCES dim_productos(id) ON UPDATE RESTRICT ON DELETE RESTRICT,
     ---
     ventas INT DEFAULT 0,
-    ingresos INT DEFAULT 0,
+    ingresos NUMERIC(15, 2) DEFAULT 0,
     PRIMARY KEY (restaurante, fecha, producto)
 );
 
